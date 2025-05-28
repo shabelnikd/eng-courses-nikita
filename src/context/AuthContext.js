@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
   const [error, setError] = useState('');
 
   // Configure axios defaults
-  axios.defaults.baseURL = 'http://localhost:8000/api';
+  axios.defaults.baseURL = 'https://nikita.diplomcomtehno.online/api/';
   
   if (token) {
     axios.defaults.headers.common['Authorization'] = `Token ${token}`;
